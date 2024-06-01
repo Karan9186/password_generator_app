@@ -16,7 +16,7 @@ function App() {
   let [nu, setNu] = useState(false);
   let [checkTrue, setCheckTrue] = useState(false);
   let [pass, setPass] = useState("");
-  let [pasLen, setPassLen] = useState(10);
+  let [pasLen, setPassLen] = useState(8);
   function setPassword() {
     let pass = "";
     let char1 = "";
@@ -28,6 +28,8 @@ function App() {
 
       if (pasLen > 20) {
         toast.error("your password length limit reached");
+      } else if (pasLen < 8) {
+        toast.error("password length is minimum 8");
       } else {
         for (let i = 0; i < pasLen; i++) {
           pass += char1.charAt(Math.floor(Math.random() * char1.length));
@@ -77,8 +79,6 @@ function App() {
             </button>
             <input
               type="number"
-              min={10}
-              max={20}
               value={pasLen}
               className="mt-2 bg-secondary input_lenghth text-white"
               onChange={(e) => setPassLen(e.target.value)}
