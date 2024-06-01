@@ -1,0 +1,76 @@
+.main_contaienr {
+  display: flex;
+  justify-content: center;
+}
+
+.main_contaienr .child_cont {
+  height: 430px;
+  width: 400px;
+  margin-top: 10%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  box-shadow: 1px 1px 31px 1px grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  background-color: black;
+  transition: all ease 0.4s;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  filter: drop-shadow(5px 10px 0px rgb(14, 115, 255));
+}
+
+.option_class {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px 0px 100px;
+  align-items: center;
+}
+
+.input_text {
+  background-color: grey;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: 700;
+}
+
+.input_lenghth {
+  border: none;
+  height: 30px;
+  width: 20%;
+  text-align: center;
+
+}
+
+.copy_animtion {
+  background-color: white;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(213, 211, 211);
+  /* Change to your desired color */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(213, 211, 211);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(213, 211, 211);
+}
+
+::placeholder {
+  /* Standard syntax */
+  color: rgb(213, 211, 211);
+}
